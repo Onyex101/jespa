@@ -1,3 +1,6 @@
-ng build --prod --base-href "jespa"
 
 https://onyex101.github.io/jespa/
+
+ng build --prod --base-href "https://onyex101.github.io/jespa/"
+
+ngh
