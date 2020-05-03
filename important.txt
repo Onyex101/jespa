@@ -3,4 +3,6 @@ https://onyex101.github.io/jespa/
 
 ng build --prod --base-href "https://onyex101.github.io/jespa/"
 
-ngh
+https://dzone.com/articles/deploy-angular-app-on-github-pages
+
+https://github.com/angular/angular-cli/wiki/stories-github-pages
