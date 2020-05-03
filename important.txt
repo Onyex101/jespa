@@ -1,0 +1,3 @@
+ng build --prod --base-href "jespa"
+
+https://onyex101.github.io/jespa/
