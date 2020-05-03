@@ -1,9 +1,11 @@
 
-https://onyex101.github.io/jespa/
-
-ng build --prod --base-href "https://onyex101.github.io/jespa/"
-
-
 https://dzone.com/articles/deploy-angular-app-on-github-pages
 
 https://github.com/angular/angular-cli/wiki/stories-github-pages
+
+
+https://www.positronx.io/deploy-angular-app-to-production-with-firebase-hosting/
+
+ng build --prod --aot
+
+firebase deploy
