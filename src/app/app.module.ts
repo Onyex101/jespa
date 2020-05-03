@@ -1,4 +1,3 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,12 +12,11 @@ import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalComponent } from './components/modal/modal.component';
-import { MatDialogModule } from '@angular/material/dialog';
-import { TextFieldModule } from '@angular/cdk/text-field';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
+import { MaterialModule } from './material.module';
+import { BrowserModule } from '@angular/platform-browser';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { SidenavListComponent } from './components/sidenav-list/sidenav-list.component';
 
 @NgModule({
   declarations: [
@@ -30,19 +28,17 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     GalleryCarouselComponent,
     HeaderComponent,
-    ModalComponent
+    ModalComponent,
+    SidenavListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgxUsefulSwiperModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
+    MaterialModule,
     FormsModule,
-    MatDialogModule,
-    TextFieldModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent],

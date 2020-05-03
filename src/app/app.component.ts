@@ -12,6 +12,7 @@ export class AppComponent {
   constructor(
     public dialog: MatDialog
   ) {}
+
   openModal($event) {
     console.log($event);
     const dialogRef = this.dialog.open(ModalComponent, {
@@ -23,4 +24,5 @@ export class AppComponent {
       console.log('The dialog was closed', result);
     });
   }
+
 }

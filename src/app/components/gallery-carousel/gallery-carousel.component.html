@@ -3,13 +3,13 @@
   <div class="swiper-wrapper">
 
     <div class="swiper-slide" *ngFor="let slide of slideData">
-      <img src="https://i.picsum.photos/id/{{slide.id}}/400/300.jpg" />
+      <img [src]="slide.img" />
     </div>
 
   </div>
 
   <!-- Add Pagination -->
-  <!-- <div class="swiper-pagination"></div> -->
+  <div class="swiper-pagination"></div>
 
   <!-- Add Arrows -->
   <div class="swiper-button-next"></div>

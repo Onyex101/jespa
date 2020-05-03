@@ -1,1 +1,313 @@
+.about-page {
+  padding: 0 !important;
 
+  .image {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .text {
+      position: absolute;
+      top: 40%;
+      left: 10%;
+      padding: 8px;
+
+      .tile {
+        width: 12px;
+        height: 81px;
+        margin-right: 12px;
+        background-color: #ffffff;
+      }
+
+      h2 {
+        margin-top: 20px;
+        font-size: 64px;
+        font-weight: 800;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .line {
+    width: 200px;
+    height: 8px;
+    background-color: #800080;
+    margin: 20px 0;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .about-page {
+    padding: 0 !important;
+
+    .image {
+      position: relative;
+
+      img {
+        height: 45vh;
+        width: 100%;
+      }
+
+      .text {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        padding: 8px;
+
+        .tile {
+          width: 6px;
+          height: 40px;
+          margin-right: 12px;
+          background-color: #ffffff;
+        }
+
+        h2 {
+          margin-top: 6px;
+          font-size: 28px;
+          font-weight: 800;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .line {
+      width: 100px;
+      height: 4px;
+      background-color: #800080;
+      margin: 10px 0;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
+    p {
+      font-size: 0.8rem;
+      text-align: justify;
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .about-page {
+    padding: 0 !important;
+
+    .image {
+      position: relative;
+
+      img {
+        height: 55vh;
+        width: 100%;
+      }
+
+      .text {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        padding: 8px;
+
+        .tile {
+          width: 8px;
+          height: 52px;
+          margin-right: 8px;
+          background-color: #ffffff;
+        }
+
+        h2 {
+          margin-top: 10px;
+          font-size: 36px;
+          font-weight: 800;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .line {
+      width: 100px;
+      height: 4px;
+      background-color: #800080;
+      margin: 10px 0;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
+    p {
+      font-size: 0.8rem;
+      text-align: justify;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .about-page {
+    padding: 0 !important;
+
+    .image {
+      position: relative;
+
+      img {
+        height: 70vh;
+        width: 100%;
+      }
+
+      .text {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        padding: 8px;
+
+        .tile {
+          width: 16px;
+          height: 81px;
+          margin-right: 12px;
+          background-color: #ffffff;
+        }
+
+        h2 {
+          margin-top: 20px;
+          font-size: 48px;
+          font-weight: 800;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .line {
+      width: 200px;
+      height: 8px;
+      background-color: #800080;
+      margin: 10px 0;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.2rem;
+      text-align: justify;
+    }
+  }
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .about-page {
+    padding: 0 !important;
+  
+    .image {
+      position: relative;
+  
+      img {
+        width: 100%;
+        height: 80vh;
+      }
+  
+      .text {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        padding: 8px;
+  
+        .tile {
+          width: 12px;
+          height: 81px;
+          margin-right: 12px;
+          background-color: #ffffff;
+        }
+  
+        h2 {
+          margin-top: 20px;
+          font-size: 64px;
+          font-weight: 800;
+          color: #ffffff;
+        }
+      }
+    }
+  
+    .line {
+      width: 200px;
+      height: 8px;
+      background-color: #800080;
+      margin: 20px 0;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    p {
+      font-size: 1.2rem;
+      text-align: justify;
+    }
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .about-page {
+    padding: 0 !important;
+  
+    .image {
+      position: relative;
+  
+      img {
+        width: 100%;
+        height: 100vh;
+      }
+  
+      .text {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        padding: 8px;
+
+        .tile {
+          width: 12px;
+          height: 81px;
+          margin-right: 12px;
+          background-color: #ffffff;
+        }
+  
+        h2 {
+          margin-top: 24px;
+          font-size: 48px;
+          font-weight: 600;
+          color: #ffffff;
+        }
+      }
+    }
+  
+    .line {
+      width: 200px;
+      height: 8px;
+      background-color: #800080;
+      margin: 20px 0;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    p {
+      font-size: 1.2rem;
+      text-align: justify;
+    }
+  }
+}

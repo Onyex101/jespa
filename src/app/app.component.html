@@ -1,5 +1,14 @@
-<div>
-  <app-header (buttonEvent)="openModal($event)"></app-header>
-  <router-outlet></router-outlet>
-  <app-footer></app-footer>
-</div>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav role="navigation">
+    <!--this is a place for us to add side-nav code-->
+    <app-sidenav-list (modalEvent)="openModal($event)" (sidenavClose)="sidenav.close()"></app-sidenav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <!--in here all the content must reside. We will add a navigation header as well-->
+    <app-header (modalEvent)="openModal($event)" (sidenavToggle)="sidenav.toggle()"></app-header>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+    <app-footer (modalEvent)="openModal($event)"></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>

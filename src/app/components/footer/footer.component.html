@@ -3,18 +3,18 @@
     <div class="row text-center text-xs-center text-sm-left text-md-left">
       <div class="col-xs-12 col-sm-4 col-md-4">
         <div class="title">
-          <div>
-            <h5>Address</h5>
-            <p>24, Toll gate Street, Apapa, Off Manigold Road</p>
+          <div class="content">
+            <h3>Address</h3>
+            <p>Evangelist Anthony Abimiku Magaji Street, off Dr Musa Ebuga Street, Anyways Soya Masaka.</p>
           </div>
   
-          <div>
-            <h5>Phone No</h5>
+          <div class="content">
+            <h3>Phone No</h3>
             <p>08038475634</p>
           </div>
   
-          <div>
-            <h5>Email</h5>
+          <div class="content">
+            <h3>Email</h3>
             <p>jespaschools@gmail.com</p>
           </div>
         </div>
@@ -24,7 +24,7 @@
           <a [routerLink]="['home']">Home</a>
           <a [routerLink]="['about']">About Us</a>
           <a [routerLink]="['gallery']">Gallery</a>
-          <a [routerLink]="['']">Contact Us</a>
+          <a (click)="sendMessage()">Contact Us</a>
         </div>
       </div>
       <div class="col">
@@ -55,5 +55,8 @@
           <div style="clear:both;"></div>
         </div>
       </div> -->
+      <div class="copyright">
+        <p class="lf">&copy; Copyright <a href="#">JesfaSchools.org</a>.</p>
+      </div>
   </div>
 </footer>

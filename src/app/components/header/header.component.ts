@@ -1,5 +1,4 @@
-import { Component, OnInit, ViewEncapsulation, AfterViewInit, Output, EventEmitter, HostListener } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit, ViewEncapsulation, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,44 +6,21 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class HeaderComponent implements OnInit, AfterViewInit {
+export class HeaderComponent implements OnInit {
 
-  @Output() buttonEvent = new EventEmitter<string>();
-  navbarOpen = false;
-  public clicked = false;
-  _el: any;
-  closeResult: string;
-  message = 'open dialog';
+  @Output() modalEvent = new EventEmitter();
+  @Output() public sidenavToggle = new EventEmitter();
 
-  constructor(
-    private router: Router,
-  ) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
-  ngAfterViewInit() {
-
-  }
 
   sendMessage() {
-    this.buttonEvent.emit(this.message)
-  }
-  toggleNavbar() {
-    this.navbarOpen = !this.navbarOpen;
+    this.modalEvent.emit();
   }
 
-
-  onClick(event): void {
-    event.preventDefault();
-    event.stopPropagation();
-    this.clicked = true;
+  public onToggleSidenav = () => {
+    this.sidenavToggle.emit();
   }
-
-  @HostListener('document:click', ['event'])
-  private clickedOutside(event): void {
-    if (this.clicked) {
-      this._el.nativeElement.querySelector('.dropdown-menu').classList.toggle('show');
-    }
-  }
-
 }

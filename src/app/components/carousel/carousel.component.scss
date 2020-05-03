@@ -1,0 +1,38 @@
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    // swiper {
+    //     height: 60vh;
+    //     width: 100%;
+    // }
+    img {
+        height: 45vh;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    img {
+        height: 55vh;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    img {
+        height: 70vh;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    img {
+        height: 80vh;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    img {
+        height: 100vh;
+        width: 100%;
+    }
+}

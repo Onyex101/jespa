@@ -11,62 +11,8 @@ export class GalleryCarouselComponent implements OnInit {
 
   @Input() imageData: any[];
   @ViewChild('usefulSwiper', { static: false }) usefulSwiper: SwiperComponent;
-  imgags = [
-    'assets/Gallery/gal10.jpg',
-    'assets/Gallery/gal11.jpg',
-    'assets/Gallery/gal12.jpg',
-    'assets/Gallery/gal13.jpg',
-    // 'assets/Gallery/gal14.jpg',
-    // 'assets/Gallery/gal15.jpg',
-    // 'assets/Gallery/gal16.jpg',
-    // 'assets/Gallery/gal17.jpg',
-    // 'assets/Gallery/gal18.jpg',
-    // 'assets/Gallery/gal19.jpg',
-    // 'assets/Gallery/gal20.jpg',
-    // 'assets/Gallery/gal21.jpg',
-    // 'assets/Gallery/gal22.jpg',
-    // 'assets/Gallery/gal23.jpg',
-    // 'assets/Gallery/gal24.jpg',
-    // 'assets/Gallery/gal25.jpg',
-    // 'assets/Gallery/gal26.jpg',
-    // 'assets/Gallery/gal27.jpg',
-    // 'assets/Gallery/gal28.jpg',
-    // 'assets/Gallery/gal29.jpg',
-    // 'assets/Gallery/gal30.jpg',
-  ];
-  slideData = [
-    {
-      id: 382,
-      name: 'Metal bluetooth cyan',
-    }, {
-      id: 822,
-      name: 'Avon',
-    }, {
-      id: 159,
-      name: 'Infrastructures',
-    }, {
-      id: 424,
-      name: 'Users Cotton',
-    }, {
-      id: 572,
-      name: 'Haptic Oklahoma Jewelery',
-    }, {
-      id: 127,
-      name: 'Circles Integration Street',
-    }, {
-      id: 1009,
-      name: 'uniform Communications Tuna',
-    }, {
-      id: 619,
-      name: 'North Carolina',
-    }, {
-      id: 716,
-      name: 'Eyeballs Rubber',
-    }, {
-      id: 382,
-      name: 'Nevada green unleash',
-    }
-  ];
+
+  slideData: any;
 
   config: SwiperOptions = {
     pagination: { el: '.swiper-pagination', clickable: true },
@@ -95,12 +41,13 @@ export class GalleryCarouselComponent implements OnInit {
       prevEl: '.swiper-button-prev'
     },
     loop: true,
-    spaceBetween: 30
+    spaceBetween: 10
   };
 
   constructor() { }
 
   ngOnInit(): void {
+    this.slideData = this.imageData;
   }
 
   nextSlide() {

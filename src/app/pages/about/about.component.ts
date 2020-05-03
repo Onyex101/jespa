@@ -8,7 +8,23 @@ declare var $: any;
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  images: any[];
+  constructor() {
+    this.images = [
+      {
+        img: 'assets/Gallery/facility1.jpg',
+      },
+      {
+        img: 'assets/Gallery/facility2.jpg',
+      },
+      {
+        img: 'assets/Gallery/facility3.jpg'
+      },
+      {
+        img: 'assets/Gallery/facility4.jpg',
+      }
+    ];
+  }
 
   ngOnInit(): void {
   }
