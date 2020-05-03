@@ -1,0 +1,24 @@
+<h1 mat-dialog-title>Contact Us</h1>
+<div mat-dialog-content>
+  <p>You can send us a mail, to make any inquiries you might need to make, we will be sure to get back to you as soon as we can</p>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput [(ngModel)]="data.name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input matInput [(ngModel)]="data.email">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Message</mat-label>
+    <textarea matInput
+            cdkTextareaAutosize
+            #autosize="cdkTextareaAutosize"
+            cdkAutosizeMinRows="3"
+            cdkAutosizeMaxRows="5" [(ngModel)]="data.message"></textarea>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Ok</button>
+</div>
